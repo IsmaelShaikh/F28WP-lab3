@@ -1,0 +1,61 @@
+<%- include('header'); -%>
+<div class="content">
+  <h1 style="font-weight: bold">Registration</h1>
+  <form action="/api/register" method="post">
+    <label for="username">Username: </label>
+    <input type="text" name="username" placeholder="Username" id="username" />
+    <br /><br />
+    <label for="password">Password: </label>
+    <input
+      type="password"
+      name="password"
+      placeholder="Password"
+      id="password"
+    /><br /><br />
+    <label for="society">Society: </label>
+    <input
+      type="text"
+      name="society"
+      placeholder="Society"
+      id="society"
+    /><br /><br />
+    <label for="name">Name: </label>
+    <input type="text" name="contact" placeholder="Name" id="contact" />
+    <br /><br />
+    <label for="addres">Address: </label>
+    <input
+      type="text"
+      name="addres"
+      placeholder="Address"
+      id="addres"
+    /><br /><br />
+    <label for="zipcode">Zipcode: </label>
+    <input
+      type="number"
+      name="zipcode"
+      placeholder="Zipcode"
+      id="zipcode"
+    /><br /><br />
+    <label for="city">City: </label>
+    <input type="text" name="city" placeholder="City" id="city" /><br /><br />
+    <label for="phone">Phone: </label>
+    <input
+      type="number"
+      name="phone"
+      placeholder="Phone Number"
+      id="phone"
+    /><br /><br />
+    <label for="fax">Fax: </label>
+    <input type="number" name="fax" placeholder="Fax" id="fax" /><br /><br />
+    <label for="max_outstanding">Max Outstanding: </label>
+    <input
+      type="number"
+      name="max_outstanding"
+      placeholder="Max Outstanding"
+      id="max_outstanding"
+    /><br /><br />
+    <button>Register</button>
+  </form>
+</div>
+<br />
+<%- include('footer'); -%>
